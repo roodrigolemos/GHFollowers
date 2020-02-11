@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GHFollowers
 //
-//  Created by Rodrigo Lemos on 16/01/20.
+//  Created by Rodrigo Lemos on 10/02/20.
 //  Copyright © 2020 Rodrigo Lemos. All rights reserved.
 //
 
