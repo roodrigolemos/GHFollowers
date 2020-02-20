@@ -10,9 +10,9 @@ import UIKit
 
 class UserInfoVC: UIViewController {
     
-    let headerView  = UIView()
-    let itemViewOne = UIView()
-    let itemViewTwo = UIView()
+    let headerView          = UIView()
+    let itemViewOne         = UIView()
+    let itemViewTwo         = UIView()
     var itemViews: [UIView] = []
     
     var username: String!
@@ -38,6 +38,8 @@ class UserInfoVC: UIViewController {
             case .success(let user):
                 DispatchQueue.main.async {
                     self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
+                    self.add(childVC: GFRepoItemVC(user: user), to: self.itemViewOne)
+                    self.add(childVC: GFFollowerItemVC(user: user), to: self.itemViewTwo)
                 }
                 
             case .failure(let error):
@@ -47,8 +49,9 @@ class UserInfoVC: UIViewController {
     }
     
     func layoutUI() {
-        let padding: CGFloat = 20
+        let padding: CGFloat    = 20
         let itemHeight: CGFloat = 140
+        
         itemViews = [headerView, itemViewOne, itemViewTwo]
         
         for itemView in itemViews {
@@ -57,12 +60,9 @@ class UserInfoVC: UIViewController {
             
             NSLayoutConstraint.activate([
                 itemView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-                itemView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+                itemView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding)
             ])
         }
-        
-        itemViewOne.backgroundColor = .systemPink
-        itemViewTwo.backgroundColor = .systemPink
         
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -72,10 +72,9 @@ class UserInfoVC: UIViewController {
             itemViewOne.heightAnchor.constraint(equalToConstant: itemHeight),
             
             itemViewTwo.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: padding),
-            itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight),
+            itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight)
         ])
     }
-    
     
     func add(childVC: UIViewController, to containerView: UIView) {
         addChild(childVC)
@@ -83,7 +82,6 @@ class UserInfoVC: UIViewController {
         childVC.view.frame = containerView.bounds
         childVC.didMove(toParent: self)
     }
-    
     
     @objc func dismssVC() {
         dismiss(animated: true)
