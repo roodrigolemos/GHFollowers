@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoritesListVC: UIViewController {
+class FavoritesListVC: GFDataLoadingVC {
 
     let tableView = UITableView()
     var favorites: [Follower] = []
@@ -75,7 +75,7 @@ extension FavoritesListVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FavoriteCell.reuseID) as! FavoriteCell
         let favorite = favorites[indexPath.row]
-        cell.set(follower: favorite)
+        cell.set(favorite: favorite)
         return cell
     }
     
