@@ -38,6 +38,7 @@
 		B7BAE9462409629E004DCFAF /* GFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BAE9452409629E004DCFAF /* GFAlertContainerView.swift */; };
 		B7BAE94824096CD1004DCFAF /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BAE94724096CD1004DCFAF /* GFDataLoadingVC.swift */; };
 		B7BAE95C240E9610004DCFAF /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BAE95B240E9610004DCFAF /* UIView+Ext.swift */; };
+		B7BAE95E240EA5B0004DCFAF /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BAE95D240EA5B0004DCFAF /* UITableView+Ext.swift */; };
 		B7F75F2C23C3EA15003EB790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F75F2B23C3EA15003EB790 /* AppDelegate.swift */; };
 		B7F75F2E23C3EA15003EB790 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F75F2D23C3EA15003EB790 /* SceneDelegate.swift */; };
 		B7F75F3523C3EA17003EB790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F75F3423C3EA17003EB790 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		B7BAE9452409629E004DCFAF /* GFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainerView.swift; sourceTree = "<group>"; };
 		B7BAE94724096CD1004DCFAF /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
 		B7BAE95B240E9610004DCFAF /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		B7BAE95D240EA5B0004DCFAF /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		B7F75F2823C3EA15003EB790 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F75F2B23C3EA15003EB790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7F75F2D23C3EA15003EB790 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				B70DC89823FE0991001C9114 /* Date+Ext.swift */,
 				B70DC89A23FE09D2001C9114 /* String+Ext.swift */,
 				B7BAE95B240E9610004DCFAF /* UIView+Ext.swift */,
+				B7BAE95D240EA5B0004DCFAF /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				B70DC88A23F5879B001C9114 /* Constants.swift in Sources */,
 				B72CD0AF23F24235005948EB /* GFError.swift in Sources */,
 				B7200AE423C69B9200FC9C27 /* GFTitleLabel.swift in Sources */,
+				B7BAE95E240EA5B0004DCFAF /* UITableView+Ext.swift in Sources */,
 				B7A5838B23CEA706001BEA6E /* NetworkManager.swift in Sources */,
 				B7BAE9462409629E004DCFAF /* GFAlertContainerView.swift in Sources */,
 				B70DC88E23F5888B001C9114 /* GFUserInfoHeaderVC.swift in Sources */,
